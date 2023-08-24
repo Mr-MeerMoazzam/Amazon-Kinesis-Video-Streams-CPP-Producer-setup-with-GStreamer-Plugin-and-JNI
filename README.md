@@ -104,6 +104,15 @@ The kvssink element has the following required parameters:
 
 For examples of common use cases, you can look at Example:[Kinesis Video Straem Examples](https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/examples-gstreamer-plugin.html)
 
+To run the example for Streaming video from an RTSP camera on Ubuntu,
+
+```
+sudo su
+
+gst-launch-1.0 -v rtspsrc location="rtsp://YourCameraRtspUrl" short-header=TRUE ! rtph264depay ! h264parse ! kvssink stream-name="YourStreamName" storage-size=128
+
+```
+
 ## Acknowledgement
 
 The information provided in this README is based on the official [Amazon Kinesis Video Streams Producer SDK Documentation](https://github.com/awslabs/amazon-kinesis-video-streams-producer-sdk-cpp/tree/master). Please refer to the official documentation for detailed instructions, platform-specific details, and updates.
