@@ -104,3 +104,6 @@ The kvssink element has the following required parameters:
 
 For examples of common use cases, you can look at Example:[Kinesis Video Straem Examples](https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/examples-gstreamer-plugin.html)
 
+## Acknowledgement
+
+The information provided in this README is based on the official [Amazon Kinesis Video Streams Producer SDK Documentation](https://github.com/awslabs/amazon-kinesis-video-streams-producer-sdk-cpp/tree/master). Please refer to the official documentation for detailed instructions, platform-specific details, and updates.
